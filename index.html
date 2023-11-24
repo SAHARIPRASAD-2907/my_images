@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Box Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .link-box {
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+
+        .link-box:hover {
+            background-color: #e9e9e9;
+        }
+
+        @media (max-width: 800px) {
+            .link-box {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .link-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="URL1" class="link-box">Link 1</a>
+        <a href="URL2" class="link-box">Link 2</a>
+        <a href="URL3" class="link-box">Link 3</a>
+        <a href="URL4" class="link-box">Link 4</a>
+        <!-- Add more link boxes as needed -->
+    </div>
+</body>
+</html>
